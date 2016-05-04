@@ -5,9 +5,10 @@
 <ul>
 <% for(var i=0; i<til.length; i++) { %>
  <li>
-   <a href='/til/<%= til[i].id %>' ><%= til[i].slug %></a>
+   <h4><a href='/til/<%= til[i].id %>' ><%= til[i].slug %></a></h4>
+   <%= til[i].body %>
    <a href='/til/<%= til[i].id %>/edit'>Edit</a>
-   <a href='/til/<%= til[i].id %>/delete'>Delete</a>
+   <button onclidk="href='/til/<%= til[i].id %">/delete'>Delete</button>
  </li>
 <% } %>
 </ul>
