@@ -8,7 +8,7 @@
    <h4><a href='/til/<%= til[i].id %>' ><%= til[i].slug %></a></h4>
    <%= til[i].body %>
    <a href='/til/<%= til[i].id %>/edit'>Edit</a>
-   <button onclidk="href='/til/<%= til[i].id %">/delete'>Delete</button>
+   <button onclick="location.href='/til/<%= til[i].id %>/delete'">Delete</button>
  </li>
 <% } %>
 </ul>
