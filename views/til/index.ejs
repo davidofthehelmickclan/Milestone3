@@ -6,8 +6,8 @@
 <% for(var i=0; i<til.length; i++) { %>
  <li>
    <h4><a href='/til/<%= til[i].id %>' ><%= til[i].slug %></a></h4>
-   <%= til[i].body %>
-   <a href='/til/<%= til[i].id %>/edit'>Edit</a>
+   <%= til[i].body %><br>
+   <button onclick="location.href='/til/<%= til[i].id %>/edit'">Edit</button>
    <button onclick="location.href='/til/<%= til[i].id %>/delete'">Delete</button>
  </li>
 <% } %>
